@@ -1,0 +1,242 @@
+/* banner */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.sign-in {
+    padding: 10px 20px;
+    background-color: #1b4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.hero-banner {
+    position: relative;
+    background-image: url('../img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg');
+    background-size: cover;
+    background-position: 90% center;
+    height: 40vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: linea;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.3) 60%, transparent 100%);
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-content {
+    max-width: 600px;
+    padding: 0 50px;
+  }
+  
+  .banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .banner-buttons .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-right: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn.primary {
+    background-color: #a78bfa;
+    color: white;
+  }
+  
+  .btn.secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+
+  @media (min-width: 1200px) {
+    .hero-banner {
+      background-position: 0% 40%;
+      /* background-position: left; */
+      background-size: 120% auto;
+    }
+
+    .banner-content {
+        padding-left: 15%;
+        max-width: 50%;
+    }
+  }
+
+
+
+
+.hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    /* padding: 20px; */
+    background-image: url('../img/image7.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-box{
+    background-color: azure;
+    height: 20vh;
+    padding: 1% 1%;
+    margin-left: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 30px;
+    color: #003366;
+    margin: 15px 0;
+}
+
+.book-now {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.book-now:hover {
+    background-color: #054f99;
+}
+
+
+
+/* Service Section */
+.service-section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    /* background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.description {
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #003366;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 30px 0 10px 0;
+    max-width: 800px;
+}
+
+.service-icon {
+    width: 150px; /* Adjust icon size */
+    height: 150px; /* Adjust icon size */
+    margin-bottom: 15px; /* Space between icon and text */
+}
+
+.service-list {
+    list-style-type: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.service-list li {
+    font-size: 1.1rem;
+    color: #444;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.service-list li::before {
+    content: "✔️";
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+
+@media  (max-width: 768px) {
+    .hero {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url('../img/image7.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-box{
+        background-color: azure;
+        width: 80%;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        margin: 5px 0 5px 0;
+        color: #003366;
+    }
+
+    .book-now {
+        padding: 15px 40px;
+        font-size: 18px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        margin: 0 auto;
+    }
+}

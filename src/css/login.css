@@ -1,0 +1,172 @@
+* { box-sizing:border-box; }
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f7f9;
+	color: #333;
+	margin-top: 30px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+h1 {
+	color: #2c3e50;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+p {
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+}
+
+form {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+}
+
+.group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+input[type="password"] {
+    width: 100%;
+	padding: 10px;
+	padding-right: 40px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.password-button {
+    position: absolute;
+    width: auto;
+    right: 10px;
+    top: 50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+#hide-password {
+    display: none;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+.optional {
+	color: #999;
+	font-size: 12px;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.buttonBlue {
+	background-color: #003366;
+	color: #fff;
+	border: none;
+}
+
+.buttonBlue:hover {
+	background-color: #002244;
+}
+
+.buttonOutline {
+	background-color: #fff;
+	color: #003366;
+	border: 2px solid #003366;
+}
+
+.buttonOutline:hover {
+	background-color: #f4f7f9;
+}
+
+.show-password {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.show-password img {
+	width: 20px; /* Adjust size as needed */
+	height: 20px;
+}
+
+.links {
+	text-align: center;
+	font-size: 14px;
+}
+
+.links a {
+	color: #003366;
+	text-decoration: none;
+}
+
+.links a:hover {
+	text-decoration: underline;
+}
+
+.errorlabel {
+	color: #e74c3c;
+	font-size: 14px;
+	display: none; /* Initially hidden */
+	z-index: 9999;
+}
+
+.authlabel {
+	font-size: 16px;
+	color: #2c3e50;
+}
+
+a:link, a:visited {
+	color: #003366;
+	text-decoration: underline;
+}

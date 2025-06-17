@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Privacy Policy</title>
+    </head>
+    <style>
+        body {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+    <body>
+        {{> ../components/header}}
+
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Effective Date: February 1, 2025</p>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to Rosewell Healthcare LLC ("Company," "we," "our," or "us"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website to book appointments.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>When you use our website, we may collect the following personal information:</p>
+            <ul>
+                <li>First and last name</li>
+                <li>Email address</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li>Schedule and manage appointments</li>
+                <li>Communicate with you regarding your appointment</li>
+                <li>Send important updates or notifications related to our services</li>
+            </ul>
+
+            <h2>4. Data Protection and Security</h2>
+            <p>We implement reasonable security measures to protect your personal information from unauthorized access, disclosure, or misuse. However, no method of transmission over the internet is entirely secure, and we cannot guarantee absolute security.</p>
+
+            <h2>5. Sharing of Information</h2>
+            <p>We do not sell, trade, or rent your personal information to third parties. However, we may share your information when required by law or to protect our legal rights.</p>
+
+            <h2>6. Cookies and Tracking Technologies</h2>
+            <p>Our website may use cookies or similar technologies to enhance user experience. You can set your browser to refuse cookies, but this may affect website functionality.</p>
+
+            <h2>7. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access, update, or delete your personal information</li>
+                <li>Opt out of receiving promotional communications</li>
+                <li>Request more information about our data practices</li>
+            </ul>
+
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us at:</p>
+            <address>
+                Rosewell Healthcare LLC<br>
+                <a href="mailto:contact@rosewellhc.com">contact@rosewellhc.com</a><br>
+                <!-- [Your Business Address] -->
+            </address>
+
+            <p>By using our website, you agree to the terms of this Privacy Policy.</p>
+        </div>
+
+        <script>
+            window.onload = function() {
+                document.body.style.visibility = 'visible';
+                document.body.style.opacity = '1';
+            };
+        </script>
+
+        {{> ../components/footer}}
+    </body>
+</html>
+

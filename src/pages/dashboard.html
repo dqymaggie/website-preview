@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoseWell Healthcare - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    body {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+</style>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <nav class="nav-header">
+                <a href="/" class="logo">RoseWell</a>
+                <div class="nav-icons">
+                    <div class="nav-links">
+                        <div class="dropdown">
+                            <a href="/" class="nav-link">Home</a>
+                            <div class="dropdown-content">
+                                <a href="#about-us">About Us</a>
+                                <a href="#faq">FAQ</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="services.html" class="nav-link">Services</a>
+                            <div class="dropdown-content">
+                                <a href="/services.html#primaryCareDescription">Primary Care</a>
+                                <a href="/services.html#mentalHealthDescription">Mental Health</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="icon-button" onclick="window.location.href='/login.html'" aria-label="Sign In" id="user-icon">
+                        <i class="fas fa-user"></i>
+                </div>
+            </nav>
+        </div> 
+    </header>
+    
+    <div class="dashboard-container">
+        <div class="profile-details">
+            <h1 id="user-welcome">Welcome, user!</h1>
+        </div>
+
+        <div class="button-grid">
+            <button id="btnSchedule" type="button" class="tile-button" onclick="window.location.href='https://practice.kareo.com/rosewell-healthcare'">
+              <i class="fa-regular fa-calendar-check"></i>
+              Schedule an Appointment
+            </button>
+            <button id="btnMessages" type="button" class="tile-button" onclick="location.href='#contact-form'">
+              <i class="fa-regular fa-envelope"></i>
+              Email Us
+            </button>
+            <button id="btnVisits" type="button" class="tile-button">
+              <i class="fa-regular fa-calendar"></i>
+              Visits
+            </button>
+            <button id="btnLogout" type="button" class="tile-button">
+              <!-- <i class="fa-regular fa-file-alt"></i> -->
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              Log Out
+            </button>
+          </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <div class="info-section">
+            <h3>Name</h3>
+            <div class="info-group">
+                <span class="display-name" id="user-name">user name</span>
+                <a href="#" class="edit-link">Edit</a>
+                <p id="nameErrorMessage" class="errorlabel" style="display:none; color: red;"></p>
+                <input type="text" class="edit-name" style="display: none; max-width: 95%; border: 1px solid #ccc; margin-left: 20px;">
+                <button class="cancel-link" style="display: none;">Cancel</button>
+                <button class="save-link" style="display: none;">Save</button>
+            </div>
+        </div>
+        <div class="info-section">
+            <h3>Email</h3>
+            <div class="info-group">
+                <span class="display-email" id="user-email">user@email.com</span>
+                <p id="emailErrorMessage" class="errorlabel" style="display:none; color: red;"></p>
+                    <input type="email" class="edit-email" style="display: none; max-width: 95%; border: 1px solid #ccc; margin-left: 20px;">
+                    <a href="#" class="edit-link">Edit</a>
+                <button class="cancel-link" style="display: none;">Cancel</button>
+                <button class="save-link" style="display: none;">Save</button>
+                <span class="verify-status" id="verify-status">Verify</span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>Password</h3>
+            <div class="info-group">
+                <p class="password-dots">
+                    <span class="display-password" id="user-password">••••••••••</span>
+                    <p id="passwordErrorMessage" class="errorlabel" style="display:none; color: red;"></p>
+                    <input type="password" class="edit-password" style="display: none; max-width: 95%; border: 1px solid #ccc; margin-left: 20px;">
+                </p>
+                <a href="#" class="edit-link">Edit</a>
+                <button class="cancel-link" style="display: none;">Cancel</button>
+                <button class="save-link" style="display: none;">Save</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for editing -->
+    <div id="editModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Edit <span id="fieldName"></span></h3>
+            <input type="text" id="editInput" />
+            <button id="saveButton">Save</button>
+        </div>
+    </div>
+
+    <!-- Dashboard Contact Form -->
+    <div class="contact" style="margin-top: 20px;" id="contact-form">
+        <!-- <section class="contact"> -->
+            <h2>Appointment & Support</h2>
+            <p class="contact-intro" style="font-size: 18px;">Leave a message and we will be in touch shortly!</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <!-- update access key -->
+                <input type="hidden" name="access_key" value="bb4c5346-980d-42f9-8080-c29fccba36e0"> 
+            
+                <div class="name-group">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="contact-firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="contact-lastName">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="contact-email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea name="message" required></textarea>
+                </div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" class="send-button">SEND</button>
+            </form>
+        <!-- </section> -->
+    </div>
+     
+
+    <script>
+        window.onload = function() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = '1';
+        };
+    </script>
+</body>
+<!-- Footer Component -->
+<div class="footer-wrapper">
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <a href="/">RoseWell</a>
+                </div>
+                <p class="footer-tagline">BUILT ON THE STRENGTH OF HEALTHCARE</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <address>
+                    <!-- 1234 Healthcare Drive<br>
+                    Suite 123<br>
+                    Corona Del Mar, CA 1234<br> -->
+                    <a href="tel:8044208575">Phone: 804-420-8575</a><br>
+                    <a>Fax: 804-373-5119</a><br>
+                    <a href="mailto:contact@rosewellhc.com">contact@rosewellhc.com</a>
+                </address>
+                <!-- <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 RoseWell Healthcare, Inc</p>
+            <div class="footer-links">
+                <a href="/terms.html" style="text-decoration: underline;">Terms & Conditions</a>
+                <a href="/privacy.html" style="text-decoration: underline;">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</div> 
+</html> 

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* Top color strip */
+  .top-strip {
+    background: linear-gradient(90deg, rgba(255, 205, 246, 0.33) 0%, rgba(111, 212, 235, 0.345) 100%);
+    height: 6px;
+  }
+  
+  /* Logo and contact section */
+  .logo-contact {
+    background: linear-gradient(90deg, rgba(255, 205, 246, 0.33) 0%, rgba(111, 212, 235, 0.345) 100%);
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .site-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #333;
+  }
+  
+  
+  .contact-icons a{
+    height: 24px;
+    margin-left: 16px;
+  }
+
+  .contact-icons i {
+    font-size: 20px;
+    color: #555;
+    margin-left: 16px;
+    transition: color 0.3s;
+  }
+  
+  .contact-icons i:hover {
+    color: #0077cc;
+  }
+
+
+
+  /* Navigation bar */
+  .nav-bar {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 14px 0;
+    font-weight: 500;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-bar a:hover {
+    color: #0077cc;
+  }
+  
+
+
+
+
+
+
+/* Mobile Menu Overlay */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 60% 0 0 10%;
+}
+
+.mobile-nav a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 3%;
+  right: 7%;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .site-title{
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .contact-icons {
+    display: none;
+    /* align-items: right;
+    position: relative;
+    margin-right: 10%; */
+  }
+
+  .menu-icon {
+    display: block;
+    margin-right: 1%;
+    align-items: right;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+}

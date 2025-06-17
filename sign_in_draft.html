@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign In and Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .switch {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .switch a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .switch a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="sign-in-form">
+            <h2>Sign In</h2>
+            <form id="signinForm">
+                <input type="email" id="signinEmail" placeholder="Email" required>
+                <input type="password" id="signinPassword" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <div class="switch">
+                <p>New user? <a href="#" onclick="toggleForms()">Register here</a></p>
+            </div>
+        </div>
+        <div id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="email" id="registerEmail" placeholder="Email" required>
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <div class="switch">
+                <p>Already have an account? <a href="#" onclick="toggleForms()">Sign in here</a></p>
+            </div>
+        </div>
+        <div id="additional-info-form" style="display: none;">
+            <h2>Additional Information</h2>
+            <form id="additionalInfoForm">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                <textarea id="reason" placeholder="What brings you here?" rows="3"></textarea>
+                <button type="submit">Complete Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function toggleForms() {
+            const signInForm = document.getElementById('sign-in-form');
+            const registerForm = document.getElementById('register-form');
+            if (signInForm.style.display === 'none') {
+                signInForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                signInForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+        }
+
+        document.getElementById('signinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('signinEmail').value;
+            const password = document.getElementById('signinPassword').value;
+            console.log('Sign In:', email, password);  // Handle sign in logic here
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            console.log('Register:', email, password);  // Handle register logic here
+
+            // Show the additional information form
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('additional-info-form').style.display = 'block';
+        });
+
+        document.getElementById('additionalInfoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const reason = document.getElementById('reason').value;
+            console.log('Additional Info:', firstName, lastName, phoneNumber, reason);  // Handle additional info logic here
+
+            // Complete sign in logic
+            console.log('User has completed registration and provided additional information.');
+        });
+    </script>
+</body>
+</html>

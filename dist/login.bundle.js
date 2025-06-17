@@ -1,0 +1,66 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/js/login.js":
+/*!*************************!*\
+  !*** ./src/js/login.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   btnLogin: () => (/* binding */ btnLogin),\n/* harmony export */   btnRegister: () => (/* binding */ btnRegister),\n/* harmony export */   initializeTogglePassword: () => (/* binding */ initializeTogglePassword),\n/* harmony export */   txtEmail: () => (/* binding */ txtEmail),\n/* harmony export */   txtPassword: () => (/* binding */ txtPassword)\n/* harmony export */ });\nconst txtEmail = document.querySelector('#txtEmail');\nconst txtPassword = document.querySelector('#txtPassword');\nconst btnLogin = document.querySelector('#btnLogin');\nconst btnRegister = document.querySelector('#btnRegister');\n\n// password toggle\nfunction initializeTogglePassword() {\n  const showPasswordButton = document.querySelector('#show-password');\n  const hidePasswordButton = document.querySelector('#hide-password');\n  const passwordField = document.querySelector('#txtPassword');\n  showPasswordButton.addEventListener('click', function () {\n    passwordField.type = 'text';\n    showPasswordButton.style.display = 'none';\n    hidePasswordButton.style.display = 'inline-flex';\n  });\n  hidePasswordButton.addEventListener('click', function () {\n    passwordField.type = 'password';\n    hidePasswordButton.style.display = 'none';\n    showPasswordButton.style.display = 'inline-flex';\n  });\n}\ninitializeTogglePassword();\n\n// ------------------------------------------------------------------------------------------\n// export const btnLogout = document.querySelector('#btnLogout')\n// export const divAuthState = document.querySelector('#divAuthState')\n// export const lblAuthState = document.querySelector('#lblAuthState')\n// export const divLoginError = document.querySelector('#divLoginError')\n// export const lblLoginErrorMessage = document.querySelector('#lblLoginErrorMessage')\n\n// export const showLoginState = (user) => {\n//   lblAuthState.innerHTML = `You're logged in as ${user.displayName} (uid: ${user.uid}, email: ${user.email}) `\n// }\n// export const hideLoginError = () => {\n//   divLoginError.style.display = 'none'\n//   lblLoginErrorMessage.innerHTML = ''\n// }\n\n// export const showLoginError = (error) => {\n//   const divLoginError = document.getElementById('divLoginError')\n//   const lblLoginErrorMessage = document.getElementById('lblLoginErrorMessage')\n\n//   if (!divLoginError || !lblLoginErrorMessage) {\n//     console.error('Login error elements not found in DOM')\n//     return\n//   }\n\n//   divLoginError.style.display = 'block';\n\n//   if (typeof error === 'string') {\n//     lblLoginErrorMessage.innerHTML = error;\n//   } else if (error.code === AuthErrorCodes.INVALID_PASSWORD) {\n//     lblLoginErrorMessage.innerHTML = `Wrong Password, please try again.`;\n//   } else if (error.code === 'auth/invalid-email') {\n//     lblLoginErrorMessage.innerHTML = `Invalid email!`;\n//   } else {\n//     lblLoginErrorMessage.innerHTML = `Error: ${error.message}`;\n//   }\n// };\n\n// export const showLoginError = (error) => {\n//   divLoginError.style.display = 'block'\n\n//   if (typeof error === 'string') {\n//     lblLoginErrorMessage.innerHTML = error;\n//   } else if (error.code === AuthErrorCodes.INVALID_PASSWORD) {\n//     lblLoginErrorMessage.innerHTML = `Wrong Password, please try again.`;\n//   } else if (error.code === 'auth/invalid-email') {\n//     lblLoginErrorMessage.innerHTML = `Invalid email!`;\n//   } else {\n//     lblLoginErrorMessage.innerHTML = `Error: ${error.message}`      \n//   }\n// }\n\n// hideLoginError();\n// showLoginError('test error');\n\n// console.log(\"login.js loaded\");\n// ------------------------------------------------------------------------------------------//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvbG9naW4uanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBTyxNQUFNQSxRQUFRLEdBQUdDLFFBQVEsQ0FBQ0MsYUFBYSxDQUFDLFdBQVcsQ0FBQztBQUNwRCxNQUFNQyxXQUFXLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBYSxDQUFDLGNBQWMsQ0FBQztBQUUxRCxNQUFNRSxRQUFRLEdBQUdILFFBQVEsQ0FBQ0MsYUFBYSxDQUFDLFdBQVcsQ0FBQztBQUNwRCxNQUFNRyxXQUFXLEdBQUdKLFFBQVEsQ0FBQ0MsYUFBYSxDQUFDLGNBQWMsQ0FBQzs7QUFHakU7QUFDTyxTQUFTSSx3QkFBd0JBLENBQUEsRUFBRztFQUN6QyxNQUFNQyxrQkFBa0IsR0FBR04sUUFBUSxDQUFDQyxhQUFhLENBQUMsZ0JBQWdCLENBQUM7RUFDbkUsTUFBTU0sa0JBQWtCLEdBQUdQLFFBQVEsQ0FBQ0MsYUFBYSxDQUFDLGdCQUFnQixDQUFDO0VBQ25FLE1BQU1PLGFBQWEsR0FBR1IsUUFBUSxDQUFDQyxhQUFhLENBQUMsY0FBYyxDQUFDO0VBRTVESyxrQkFBa0IsQ0FBQ0csZ0JBQWdCLENBQUMsT0FBTyxFQUFFLFlBQVc7SUFDdERELGFBQWEsQ0FBQ0UsSUFBSSxHQUFHLE1BQU07SUFDM0JKLGtCQUFrQixDQUFDSyxLQUFLLENBQUNDLE9BQU8sR0FBRyxNQUFNO0lBQ3pDTCxrQkFBa0IsQ0FBQ0ksS0FBSyxDQUFDQyxPQUFPLEdBQUcsYUFBYTtFQUNsRCxDQUFDLENBQUM7RUFFRkwsa0JBQWtCLENBQUNFLGdCQUFnQixDQUFDLE9BQU8sRUFBRSxZQUFXO0lBQ3RERCxhQUFhLENBQUNFLElBQUksR0FBRyxVQUFVO0lBQy9CSCxrQkFBa0IsQ0FBQ0ksS0FBSyxDQUFDQyxPQUFPLEdBQUcsTUFBTTtJQUN6Q04sa0JBQWtCLENBQUNLLEtBQUssQ0FBQ0MsT0FBTyxHQUFHLGFBQWE7RUFDbEQsQ0FBQyxDQUFDO0FBQ0o7QUFFQVAsd0JBQXdCLENBQUMsQ0FBQzs7QUFJMUI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFHQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL3Jvc2V3ZWxsLy4vc3JjL2pzL2xvZ2luLmpzP2RkNDgiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IHR4dEVtYWlsID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3R4dEVtYWlsJylcbmV4cG9ydCBjb25zdCB0eHRQYXNzd29yZCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyN0eHRQYXNzd29yZCcpXG5cbmV4cG9ydCBjb25zdCBidG5Mb2dpbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyNidG5Mb2dpbicpXG5leHBvcnQgY29uc3QgYnRuUmVnaXN0ZXIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjYnRuUmVnaXN0ZXInKVxuXG5cbi8vIHBhc3N3b3JkIHRvZ2dsZVxuZXhwb3J0IGZ1bmN0aW9uIGluaXRpYWxpemVUb2dnbGVQYXNzd29yZCgpIHtcbiAgY29uc3Qgc2hvd1Bhc3N3b3JkQnV0dG9uID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3Nob3ctcGFzc3dvcmQnKTtcbiAgY29uc3QgaGlkZVBhc3N3b3JkQnV0dG9uID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI2hpZGUtcGFzc3dvcmQnKTtcbiAgY29uc3QgcGFzc3dvcmRGaWVsZCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyN0eHRQYXNzd29yZCcpO1xuXG4gIHNob3dQYXNzd29yZEJ1dHRvbi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uKCkge1xuICAgIHBhc3N3b3JkRmllbGQudHlwZSA9ICd0ZXh0JztcbiAgICBzaG93UGFzc3dvcmRCdXR0b24uc3R5bGUuZGlzcGxheSA9ICdub25lJztcbiAgICBoaWRlUGFzc3dvcmRCdXR0b24uc3R5bGUuZGlzcGxheSA9ICdpbmxpbmUtZmxleCc7XG4gIH0pO1xuXG4gIGhpZGVQYXNzd29yZEJ1dHRvbi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uKCkge1xuICAgIHBhc3N3b3JkRmllbGQudHlwZSA9ICdwYXNzd29yZCc7XG4gICAgaGlkZVBhc3N3b3JkQnV0dG9uLnN0eWxlLmRpc3BsYXkgPSAnbm9uZSc7XG4gICAgc2hvd1Bhc3N3b3JkQnV0dG9uLnN0eWxlLmRpc3BsYXkgPSAnaW5saW5lLWZsZXgnO1xuICB9KTtcbn1cblxuaW5pdGlhbGl6ZVRvZ2dsZVBhc3N3b3JkKCk7XG5cblxuXG4vLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbi8vIGV4cG9ydCBjb25zdCBidG5Mb2dvdXQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjYnRuTG9nb3V0Jylcbi8vIGV4cG9ydCBjb25zdCBkaXZBdXRoU3RhdGUgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjZGl2QXV0aFN0YXRlJylcbi8vIGV4cG9ydCBjb25zdCBsYmxBdXRoU3RhdGUgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcjbGJsQXV0aFN0YXRlJylcbi8vIGV4cG9ydCBjb25zdCBkaXZMb2dpbkVycm9yID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI2RpdkxvZ2luRXJyb3InKVxuLy8gZXhwb3J0IGNvbnN0IGxibExvZ2luRXJyb3JNZXNzYWdlID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI2xibExvZ2luRXJyb3JNZXNzYWdlJylcblxuLy8gZXhwb3J0IGNvbnN0IHNob3dMb2dpblN0YXRlID0gKHVzZXIpID0+IHtcbi8vICAgbGJsQXV0aFN0YXRlLmlubmVySFRNTCA9IGBZb3UncmUgbG9nZ2VkIGluIGFzICR7dXNlci5kaXNwbGF5TmFtZX0gKHVpZDogJHt1c2VyLnVpZH0sIGVtYWlsOiAke3VzZXIuZW1haWx9KSBgXG4vLyB9XG4vLyBleHBvcnQgY29uc3QgaGlkZUxvZ2luRXJyb3IgPSAoKSA9PiB7XG4vLyAgIGRpdkxvZ2luRXJyb3Iuc3R5bGUuZGlzcGxheSA9ICdub25lJ1xuLy8gICBsYmxMb2dpbkVycm9yTWVzc2FnZS5pbm5lckhUTUwgPSAnJ1xuLy8gfVxuXG4vLyBleHBvcnQgY29uc3Qgc2hvd0xvZ2luRXJyb3IgPSAoZXJyb3IpID0+IHtcbi8vICAgY29uc3QgZGl2TG9naW5FcnJvciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdkaXZMb2dpbkVycm9yJylcbi8vICAgY29uc3QgbGJsTG9naW5FcnJvck1lc3NhZ2UgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbGJsTG9naW5FcnJvck1lc3NhZ2UnKVxuXG4vLyAgIGlmICghZGl2TG9naW5FcnJvciB8fCAhbGJsTG9naW5FcnJvck1lc3NhZ2UpIHtcbi8vICAgICBjb25zb2xlLmVycm9yKCdMb2dpbiBlcnJvciBlbGVtZW50cyBub3QgZm91bmQgaW4gRE9NJylcbi8vICAgICByZXR1cm5cbi8vICAgfVxuXG4vLyAgIGRpdkxvZ2luRXJyb3Iuc3R5bGUuZGlzcGxheSA9ICdibG9jayc7XG5cbi8vICAgaWYgKHR5cGVvZiBlcnJvciA9PT0gJ3N0cmluZycpIHtcbi8vICAgICBsYmxMb2dpbkVycm9yTWVzc2FnZS5pbm5lckhUTUwgPSBlcnJvcjtcbi8vICAgfSBlbHNlIGlmIChlcnJvci5jb2RlID09PSBBdXRoRXJyb3JDb2Rlcy5JTlZBTElEX1BBU1NXT1JEKSB7XG4vLyAgICAgbGJsTG9naW5FcnJvck1lc3NhZ2UuaW5uZXJIVE1MID0gYFdyb25nIFBhc3N3b3JkLCBwbGVhc2UgdHJ5IGFnYWluLmA7XG4vLyAgIH0gZWxzZSBpZiAoZXJyb3IuY29kZSA9PT0gJ2F1dGgvaW52YWxpZC1lbWFpbCcpIHtcbi8vICAgICBsYmxMb2dpbkVycm9yTWVzc2FnZS5pbm5lckhUTUwgPSBgSW52YWxpZCBlbWFpbCFgO1xuLy8gICB9IGVsc2Uge1xuLy8gICAgIGxibExvZ2luRXJyb3JNZXNzYWdlLmlubmVySFRNTCA9IGBFcnJvcjogJHtlcnJvci5tZXNzYWdlfWA7XG4vLyAgIH1cbi8vIH07XG5cblxuLy8gZXhwb3J0IGNvbnN0IHNob3dMb2dpbkVycm9yID0gKGVycm9yKSA9PiB7XG4vLyAgIGRpdkxvZ2luRXJyb3Iuc3R5bGUuZGlzcGxheSA9ICdibG9jaydcblxuLy8gICBpZiAodHlwZW9mIGVycm9yID09PSAnc3RyaW5nJykge1xuLy8gICAgIGxibExvZ2luRXJyb3JNZXNzYWdlLmlubmVySFRNTCA9IGVycm9yO1xuLy8gICB9IGVsc2UgaWYgKGVycm9yLmNvZGUgPT09IEF1dGhFcnJvckNvZGVzLklOVkFMSURfUEFTU1dPUkQpIHtcbi8vICAgICBsYmxMb2dpbkVycm9yTWVzc2FnZS5pbm5lckhUTUwgPSBgV3JvbmcgUGFzc3dvcmQsIHBsZWFzZSB0cnkgYWdhaW4uYDtcbi8vICAgfSBlbHNlIGlmIChlcnJvci5jb2RlID09PSAnYXV0aC9pbnZhbGlkLWVtYWlsJykge1xuLy8gICAgIGxibExvZ2luRXJyb3JNZXNzYWdlLmlubmVySFRNTCA9IGBJbnZhbGlkIGVtYWlsIWA7XG4vLyAgIH0gZWxzZSB7XG4vLyAgICAgbGJsTG9naW5FcnJvck1lc3NhZ2UuaW5uZXJIVE1MID0gYEVycm9yOiAke2Vycm9yLm1lc3NhZ2V9YCAgICAgIFxuLy8gICB9XG4vLyB9XG5cbi8vIGhpZGVMb2dpbkVycm9yKCk7XG4vLyBzaG93TG9naW5FcnJvcigndGVzdCBlcnJvcicpO1xuXG4vLyBjb25zb2xlLmxvZyhcImxvZ2luLmpzIGxvYWRlZFwiKTtcbi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSJdLCJuYW1lcyI6WyJ0eHRFbWFpbCIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsInR4dFBhc3N3b3JkIiwiYnRuTG9naW4iLCJidG5SZWdpc3RlciIsImluaXRpYWxpemVUb2dnbGVQYXNzd29yZCIsInNob3dQYXNzd29yZEJ1dHRvbiIsImhpZGVQYXNzd29yZEJ1dHRvbiIsInBhc3N3b3JkRmllbGQiLCJhZGRFdmVudExpc3RlbmVyIiwidHlwZSIsInN0eWxlIiwiZGlzcGxheSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/login.js\n");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/js/login.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	
+/******/ })()
+;

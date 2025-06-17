@@ -1,0 +1,368 @@
+.hero-banner {
+    position: relative;
+    background-image: url('../img/leuchtturm-entertainment-U2H4Br0_NLs-unsplash.jpg');
+    background-size: cover;
+    background-position: 90% center;
+    height: 40vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: linea;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.3) 60%, transparent 100%);
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-content {
+    max-width: 600px;
+    padding: 0 50px;
+  }
+  
+  .banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .banner-buttons .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-right: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn.primary {
+    background-color: #a78bfa;
+    color: white;
+  }
+  
+  .btn.secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+
+  @media (min-width: 1200px) {
+    .banner-content {
+        padding-left: 15%;
+        max-width: 50%;
+    }
+}
+
+
+.instructions-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.insurance-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .insurance-section ul {
+    padding-left: 25%;
+    list-style-type: disc;
+    margin: 10px 0 0;
+  }
+  
+  .insurance-section li {
+    margin-bottom: 6px;
+  }
+  
+  .insurance-section p {
+    padding: 50px;
+    text-align: center;
+  }
+
+
+
+
+.step {
+    display: flex;
+    flex-direction: row;  /* Changed back to row to put number on left */
+    align-items: flex-start;  /* Align items to top */
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.step-number {
+    /* background-color: #007bff;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0; */
+    font-size: 48px;
+    font-weight: bold;
+    color: #003366;
+    /* color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    min-width: 100px;
+    padding-top: 9rem;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.step-content img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.step-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 80%;
+}
+
+
+/* Instructions */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    /* color: #003366; */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.steps-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.steps {
+    display: flex;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.step-odd {
+    background-color: #e6f3ff;
+}
+
+.step-even {
+    background-color: #f0f7ff;
+}
+
+.step-content {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.numbers {
+    font-size: 48px;
+    font-weight: bold;
+    color: #003366;
+    /* color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    min-width: 100px;
+}
+
+.step-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.step-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.instruction {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.step-indicator {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: #003366;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-number {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .step-content {
+        flex-direction: column;
+    }
+    
+    .step-content img {
+        max-width: 100%;
+    }
+    
+    .step-text {
+        max-width: 100%;
+    }
+    
+    .step-indicator {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        transform: none;
+    }
+}
+
+.section-container {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 0 1rem;
+}
+
+.section-container h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.visit-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.visit-step {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.visit-icon {
+    font-size: 2rem;
+    color: #003366;
+    width: 60px;
+    text-align: center;
+}
+
+.visit-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.visit-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.visit-text a:hover {
+    text-decoration: underline;
+}
+
+.book-now-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.book-now-button {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button i {
+    margin-left: 10px;
+}
+
+.book-now-button:hover {
+    background-color: #002244;
+}
+
+@media (max-width: 600px) {
+    .visit-step {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .visit-icon {
+        margin-bottom: 0.5rem;
+    }
+}

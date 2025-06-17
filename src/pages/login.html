@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Sign In</title>
+</head>
+<style>
+  body {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+  }
+</style>
+
+<body>
+  <div id="login">
+    <div class="header">
+      <!-- <img src="/img/image1.jpg" alt="RoseWell Healthcare Logo" class="logo"> -->
+      <h1>Secure, convenient sign in.</h1>
+    </div>
+    <form>
+      <div class="group">
+        <label for="txtEmail">Email</label>
+        <input id="txtEmail" type="email">
+      </div>
+      <div class="group">
+        <label for="txtPassword">Password</label>
+        <input id="txtPassword" type="password">
+        <button aria-label="Show Password" type="button" class="password-button" id="show-password"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation"><path fill="currentColor" fill-rule="evenodd" d="M12 6c4.224 0 7.557 2.1 10 6.298-2.295 3.84-5.567 5.74-9.817 5.701-4.25-.038-7.645-2-10.183-5.883C4.443 8.04 7.776 6 12 6zm0 1.714c-2.3 0-4.166 1.92-4.166 4.286 0 2.367 1.866 4.286 4.167 4.286 2.301 0 4.166-1.92 4.166-4.286 0-2.367-1.865-4.286-4.166-4.286zm-.026 1.262a3 3 0 110 6 3 3 0 010-6z"></path></svg></button>
+        <button aria-label="Hide Password" type="button" class="password-button" id="hide-password"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation"><path fill="currentColor" fill-rule="evenodd" d="M19.431 4.88a.5.5 0 010 .707L5.29 19.729a.5.5 0 11-.707-.707L18.724 4.88a.5.5 0 01.707 0zm-1.114 3.087c1.217.851 2.85 2.852 3.683 4.337-2.215 3.982-5.75 5.754-10 5.754-.52 0-2.114-.006-3.026-.562l9.343-9.529zM12.687 6c.64.012 2.42.31 2.961.566l-9.643 9.639C4.524 15.4 2.901 13.475 2 12.116 4.954 7.386 8.104 5.915 12.687 6z"></path></svg></button>
+      </div>
+
+      <p id="lblLoginErrorMessage" class="errorlabel">Error message</p>
+      <button id="btnLogin" type="button" class="button buttonBlue">Sign in</button>
+      <button id="btnRegister" type="button" class="button buttonOutline" onclick="window.location.href='/register.html'">
+        <a style="text-decoration: none; color: inherit;">Register now</a>
+    </button>
+      <div class="links">
+        <p><a href="#" style="text-decoration: underline" id="forgot-password">Forgot password?</a></p>
+        <p id="forgot-password-error" class="errorlabel">Error message</p>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    window.onload = function() {
+      document.body.style.visibility = 'visible';
+      document.body.style.opacity = '1';
+    };
+  </script>
+</body>
+
+<!-- Footer Component -->
+<!-- <div class="footer-smaller" style="width:100%; ">
+  <footer>
+      <div class="footer-bottom">
+          <p>&copy; 2025 RoseWell Healthcare, Inc</p>
+          <div class="footer-links">
+              <a href="/terms">Terms & Conditions</a>
+              <a href="/privacy">Privacy Policy</a>
+          </div>
+      </div>
+  </footer>
+</div>  -->
+</html>
